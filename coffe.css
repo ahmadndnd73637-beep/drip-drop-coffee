@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #f1f1f1f0; 
+    --bg-secondary: #fbfbfb;
+    --dark-gray: #333;
+    --light-brown: #c7a17a;
+    --black: #1f2226;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 , h2 , h3{
+     font-family: "Oswald", sans-serif;
+     color: var(--dark-gray);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*utlity classes الكلاس ال هنستخدمها اكتر من مره*/
+.container{
+    max-width: 950px;
+    margin: auto; 
+
+}
+.text-primary{
+    color: var(--light-brown);
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 22px;
+}
+.heading h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* Header start*/
+#header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+#header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: auto;
+    height: 75px;
+}
+#header .navbar .logo{
+    width: 300px;
+}
+#header .navbar ul{
+    display: flex;
+}
+#header .navbar ul li a {
+    color: var(--dark-gray);
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 500;
+}
+#header .navbar ul li a:hover{
+    color: var(--light-brown);
+    transition: all 0.3s ease;
+}
+/* header end*/
+/*Home start*/
+#home{
+    background: url("./imag/home-bg.png") center  no-repeat;
+    background-size: 100%;
+    background-color: var(--bg-color);
+}
+#home .home-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 110vh;
+    gap: 2rem;
+    align-items: center;
+}
+#home .home-content .content-text h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+#home .home-content .content-text h1{
+    font-size: 50px;
+    margin: 20px 0;
+    line-height: 1;
+    
+}
+#home .home-content .content-text p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+#home .home-content .content-text .btn{
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--light-brown);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+#home .home-content .content-text .btn:hover{
+    background-color: var(--dark-gray);
+}
+#home .home-content .content-text .btn i{
+    margin-left: 3px;
+}
+#home .home-content img{
+    display: block;
+    width: 80%;
+}
+/*Home end*/
+/*About start*/
+
+#about ,
+#menu,
+#testimonials,
+#contact,
+#footer .footer-top{
+    padding: 6rem 0;
+}
+#about .row{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: .5rem;
+    align-items: center;
+
+}
+#about .row  .about-content h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 5px;
+
+}
+#about .row  .about-content .item{
+    margin: 1.5rem 0;
+
+}
+#about .row  .about-content .item h3{
+    margin: 4px;
+}
+#about .row  .about-content img{
+    display: block;
+    width: 80%;
+}
+
+/*About end*/
+/*menu start*/
+
+#menu{
+    background-color: var(--bg-color);
+}
+
+
+#menu .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    gap: 3rem;
+    align-items: center;
+}
+#menu .row .col.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    border: 2px solid #ddd;
+    padding: 25px 20px;
+}
+#menu .row .col .item img{
+    width: 90px;
+    margin-left: -40px;
+
+}
+#menu .row .col.item .details{
+    margin-left: 20px;
+}
+#menu .row .col.item .details h3{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+#menu .row .col.item .details p{
+    font-size: 2px;
+    line-height: .5;
+}
+#menu .row .col.item .price{
+    padding: 20px;
+    margin: auto;
+}
+#menu .row .col.item .price p{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*menu end*/
+/*testimonials start*/
+
+#testimonials .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 6rem;
+    gap: 2.5rem;
+
+}
+#testimonials .row .item {
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 25px 25px 35px;
+}
+#testimonials .row .item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
+}
+#testimonials .row .item h3{
+    margin: 20px 0 10px;
+}
+#testimonials .row .item p {
+    line-height: 1.5;
+
+}
+/*testimonials end*/
+/*contact start*/
+#contact{
+    background-color: var(--bg-color);
+}
+
+#contact .row{
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    margin-top: 2rem;
+}
+#contact .row .contact-content{
+    background-color: #fff;
+    padding: 1.5rem;
+
+}
+
+#contact .row .contact-content h3{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#contact .row .contact-content form input,
+#contact .row .contact-content form textarea{
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+#contact .row .contact-content form .btn-submit{
+    background-color: var(--black);
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+#contact .row .contact-content form .btn-submit:hover{
+    background-color: var(--light-brown);
+}
+#cntact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+/*contact end*/
+/*footer start*/
+#footer .footer-top{
+    background: url("./imag/footer-bg.png");
+    color: #fff;
+}
+#footer .footer-top .row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+#footer .footer-top .row .col h3{
+    color: #fff;
+    margin: 10px;
+}
+#footer .footer-top .row .col p{
+    width: 450px;
+    line-height: 1;
+}
+#footer .footer-top .row .col ul li{
+    margin: 5px 0;
+}
+#footer .footer-top .row .col ul li i{
+    margin: 5px;
+}
+#footer .footer-top .row .col ul li a{
+    color: #fff;
+}
+#footer .copyright{
+    background-color: var(--dark-gray);
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+#footer .copyright p a{
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+#footer .copyright p a:hover{
+    color: var(--light-brown);
+}
+/*footer end*/
+
+
+
+
