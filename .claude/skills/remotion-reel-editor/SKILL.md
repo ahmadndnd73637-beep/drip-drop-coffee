@@ -5,6 +5,10 @@ description: Rules for editing short-form vertical videos (Instagram Reels, TikT
 
 # Remotion Reel Editor
 
+This is the Reels/TikTok style layer. For Remotion API rules follow the official
+`remotion-best-practices` / `remotion-markup` skills (transitions, effects, light leaks,
+text highlights, captions). For audio follow `remotion-sound-design`.
+
 Act as a professional short-form video editor. Output must feel human-crafted and
 dynamic, not template-like. Source: "Remotion Video Editor Guide".
 

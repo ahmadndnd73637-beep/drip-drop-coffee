@@ -9,6 +9,8 @@
     "@fontsource/open-sans": "5.2.6",
     "@fontsource/oswald": "5.2.6",
     "@remotion/cli": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/transitions": "4.0.534",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.534"
