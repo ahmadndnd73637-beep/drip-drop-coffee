@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts DripDropPromo out/video.mp4 --codec h264 --crf 17"
+    "render": "remotion render src/index.ts DripDropPromo out/video.mp4 --codec h264 --crf 17",
+    "render:alsaad": "remotion render src/index.ts AlsaadReveal out/alsaad.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@fontsource/open-sans": "5.2.6",
