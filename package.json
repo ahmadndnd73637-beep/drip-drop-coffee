@@ -1,0 +1,26 @@
+{
+  "name": "drip-drop-coffee",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts DripDropPromo out/video.mp4 --codec h264 --crf 17",
+    "render:alsaad": "remotion render src/index.ts AlsaadReveal out/alsaad.mp4 --codec h264 --crf 17",
+    "render:alsaad-promo": "remotion render src/index.ts AlsaadPromo out/alsaad-promo.mp4 --codec h264 --crf 17",
+    "music:alsaad": "python3 scripts/make-alsaad-music.py /tmp/alsaad-beat.wav && ffmpeg -y -i /tmp/alsaad-beat.wav -c:a libvorbis -q:a 6 public/music/alsaad-beat.ogg"
+  },
+  "dependencies": {
+    "@fontsource/cairo": "5.2.7",
+    "@fontsource/open-sans": "5.2.6",
+    "@fontsource/oswald": "5.2.6",
+    "@remotion/cli": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/transitions": "4.0.534",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
