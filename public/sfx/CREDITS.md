@@ -12,3 +12,7 @@ taken from https://github.com/kapishdima/soundcn `assets/`.
 | expand.ogg | kenney_digital-audio/phaserUp3 |
 | exit.ogg | kenney_digital-audio/phaserDown2 |
 | sting.ogg | kenney_music-jingles/Hit jingles/jingles_HIT02 |
+| transition.ogg | kenney_interface-sounds/maximize_003 |
+| pluck-1.ogg, pluck-2.ogg | kenney_interface-sounds/pluck_001, pluck_002 |
+| check.ogg | kenney_interface-sounds/select_002 |
+| cta.ogg | kenney_interface-sounds/switch_002 |

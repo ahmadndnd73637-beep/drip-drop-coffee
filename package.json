@@ -4,9 +4,11 @@
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts DripDropPromo out/video.mp4 --codec h264 --crf 17",
-    "render:alsaad": "remotion render src/index.ts AlsaadReveal out/alsaad.mp4 --codec h264 --crf 17"
+    "render:alsaad": "remotion render src/index.ts AlsaadReveal out/alsaad.mp4 --codec h264 --crf 17",
+    "render:alsaad-promo": "remotion render src/index.ts AlsaadPromo out/alsaad-promo.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
+    "@fontsource/cairo": "5.2.7",
     "@fontsource/open-sans": "5.2.6",
     "@fontsource/oswald": "5.2.6",
     "@remotion/cli": "4.0.534",

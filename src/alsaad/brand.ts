@@ -1,3 +1,5 @@
+import "@fontsource/cairo/700.css";
+import "@fontsource/cairo/900.css";
 import "@fontsource/open-sans/800.css";
 
 // AlSaad identity, sampled from the supplied logo.
@@ -24,3 +26,5 @@ export const LETTER_PATHS = [
   "M1355,1106 L1544,917 Q1563,894 1590,894 L1617,894 Q1627,894 1627,904 L1627,1106",
   "M1696,1000 L1696,1106 L1820,1106 A106,106 0 0 0 1820,894 L1684,894",
 ];
+
+export const arabicFont = '"Cairo", sans-serif';
